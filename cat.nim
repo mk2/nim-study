@@ -14,7 +14,7 @@ proc cat(fileName: string) =
 
 when declared(paramCount) and declared(paramStr):
   if paramCount() > 0:
-    for i in 0..paramCount()-1:
+    for i in 1..paramCount():
       cat(paramStr(i))
   else:
     catBody(stdin)
